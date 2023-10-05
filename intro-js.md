@@ -237,7 +237,7 @@ One of the most basic things we need to do in programming is say "if this thing 
 
 Sometimes we also want to say "And if it's not true, then do something different."
 
-### We use **`if/else`** statements when we have code we want to run if something is true and different code that should run if that same thing is not true.
+### We use **`if/else`** statements when we need to indicate code to run for both true and false possibilities.
 
 ---
 
