@@ -366,9 +366,7 @@ if (32) {
 
 ---
 
-## Logical operators
-
-### These let us combine conditions
+## Logical operators let us combine conditions
 
 `&&` and
 
@@ -388,7 +386,7 @@ a || b // a OR b have to be true for this expression to evaluate as true
 
 ---
 
-## while and for loops
+## `while` and `for` loops
 
 The next basic thing we need to do in programming is repeat the same task over and over.
 
