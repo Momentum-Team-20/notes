@@ -233,11 +233,11 @@ In a computer language, a group of words, numbers, and operators that performs a
 
 One of the most basic things we need to do in programming is say "if this thing is true, then do this. (And if it's not true, then don't do it.)"
 
-### We use **if** statements to determine what code to run after checking some condition.
+### We use **`if`** statements to determine what code to run after checking some condition.
 
 Sometimes we also want to say "And if it's not true, then do something different."
 
-### We use **if/else** statements to indicate code that should run when some condition is not true.
+### We use **`if/else`** statements when we have code we want to run if something is true and different code that should run if that same thing is not true.
 
 ---
 
