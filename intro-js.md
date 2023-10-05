@@ -371,7 +371,9 @@ if (32) {
 ### These let us combine conditions
 
 `&&` and
+
 `||` or
+
 `!` not
 
 ```js
