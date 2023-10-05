@@ -196,12 +196,11 @@ points++ // same as points = points + 1
 
 ## Write some JavaScript 2
 
-1. Clone the following repo:
-   `https://github.com/momentum-team-8/examples/tree/main/js-hello-world-exercise`
+1. Clone the following repo: [https://github.com/momentum-team-20/js-hello-world](https://github.com/momentum-team-20/js-hello-world)
 2. Open the repo in VS Code. You'll be working on the exercises in `main.js`.
 3. Open `index.html` in your browser.
 4. In the browser, open the dev tools and go to the JavaScript console by clicking on the "Console" tab.
-5. Work on exercises 1-8. Uncomment the necessary lines in each exercise as you work on it. When you make a change in the javascript file, save it and then reload the index.html page in the browser. You should see the `console.log()` output in the console.
+5. Work on exercises 1-8. Uncomment the necessary lines in each exercise as you work on it. When you make a change in the Javascript file, **save it and then reload the index.html page in the browser**. You should see the `console.log()` output in the console.
 
 ---
 
