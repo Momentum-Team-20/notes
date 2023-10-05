@@ -216,7 +216,7 @@ In a computer language, a group of words, numbers, and operators that performs a
 - `b * 2` is an expression that will be _evaluated_.
 
 **Expressions** are individual parts of a statement that are evaluated to produce a value.
-Statements are executed to make something happen.
+**Statements** are executed to make something happen.
 
 ---
 
@@ -229,17 +229,15 @@ Statements are executed to make something happen.
 
 ---
 
-## Conditionals
-
-One of the most basic things we need to do in programming is say "if this thing is true, then do this other thing."
-
-# We use **if/else** statements for this.
+## Conditionals & Logical Flow
 
 One of the most basic things we need to do in programming is say "if this thing is true, then do this. (And if it's not true, then don't do it.)"
 
-Sometimes we also want to say "And if it's not true, then do that."
+### We use **if** statements to determine what code to run after checking some condition.
 
-We use **if** and **if/else** statements for this.
+Sometimes we also want to say "And if it's not true, then do something different."
+
+### We use **if/else** statements to indicate code that should run when some condition is not true.
 
 ---
 
