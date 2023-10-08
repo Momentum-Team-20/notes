@@ -229,43 +229,61 @@ In a computer language, a group of words, numbers, and operators that performs a
 
 ---
 
-## Conditionals & Logical Flow
+# Conditionals
 
-One of the most basic things we need to do in programming is say "if this thing is true, then do this. (And if it's not true, then don't do it.)"
+One of the most basic things we need to do in programming is run code based on some condition.
 
-### We use **`if`** statements to determine what code to run after checking some condition.
-
-Sometimes we also want to say "And if it's not true, then do something different."
-
-### We use **`if/else`** statements when we need to indicate code to run for both true and false possibilities.
+We use __if__ and __if/else__ statements for this.
 
 ---
 
-## `if` can be used by itself
+# Conditionals create logical flow in a program
+
+One of the most basic things we need to do in programming is say _if this thing is true, then do this. (And if it's not true, then don't do it.)_
+
+We use **`if`** statements to determine what code to run after checking some condition.
+
+---
+
+# `if`
+
+The condition inside the parentheses is checked, and if it's true, the code inside the curly brackets will run. If not, it won't run.
 
 ```js
 if (points > 10) {
-  console.log('You win')
+  console.log("You win")
 }
 
 if (madeGoal) {
   points = points + 2
-  console.log('You made a goal!')
+  console.log("You made a goal!")
   madeGoal = false
 }
 ```
 
 ---
 
-## `if/else`
+# Branching logic with if/else
+
+Sometimes we also want to say "And if it's not true, then do something different."
+
+We use **`if/else`** statements when we have code to run if something is true _and_ if something is false. 
+
+The `else` block lets us have a Plan B in addition to our Plan A.
+
+---
+
+# `if/else`
 
 ```js
 if (points > 10) {
-  console.log('You win')
+  console.log("You win")
 } else {
-  console.log('You lose')
+  console.log("You lose")
 }
 ```
+
+The general structure of an if/else statement is:
 
 ```js
 if (predicate) {
@@ -277,15 +295,17 @@ if (predicate) {
 
 ---
 
-## `if...else if..else`
+# `if...else if..else`
+
+You can have many branches to your logic, but only one will ever run.
 
 ```js
 if (yourPoints > theirPoints) {
-  console.log('You win')
+  console.log("You win")
 } else if (theirPoints > yourPoints) {
-  console.log('You lose')
+  console.log("You lose")
 } else {
-  console.log('You tied')
+  console.log("You tied")
 }
 ```
 
@@ -356,13 +376,13 @@ Everything that is not on the falsy list is truthy. That includes:
 
 ## _Anything_ that evaluates to true or false can be used in an if statement.
 
-⚠️ You can always check conditions in the console
-
 ```js
 if (32) {
   console.log('This is true!')
 }
 ```
+
+⚠️ You can always check conditions in the console.
 
 ---
 
@@ -398,7 +418,9 @@ The next basic thing we need to do in programming is repeat the same task over a
 
 ```js
 // say hi 5 times
+
 let count = 0
+
 while (count < 5) {
   console.log('Hi!')
   count += 1
@@ -497,7 +519,7 @@ This block of code isn't executed immediately, but later when it is _called_.
 
 ---
 
-## Think about a recipe - black beans and rice
+## Think about a recipe for black beans and rice
 
 1. **Chop** an _onion_.
 2. **Mince** _two cloves of garlic_.
@@ -518,12 +540,11 @@ This block of code isn't executed immediately, but later when it is _called_.
 4. **Cut** the _vegetable_ with _several horizontal cuts parallel to the board_.
 5. **Cut** through the _vegetable_ at _right angles to the board_.
 
-- Each work in recipe vocabulary (chop, mince, saute, boil, etc) contains several sub-steps. These are _functions_!
+- Each action word in recipe vocabulary (chop, mince, saute, boil, etc) contains several sub-steps. These are _functions_!
 - How you do each of these things is dependent on what you're doing it to (the _arguments_!)
 
 ---
-
-You need to **declare** the function first.
+## _Declare_ the function
 
 ```js
 function sayHello(name) {
@@ -531,24 +552,26 @@ function sayHello(name) {
 }
 ```
 
-Then you can **call** the function, which will actually run the code inside the curly braces.
+## Then _call_ the function
+
+Calling the function is what will actually run the code inside the curly braces.
 
 ```js
 sayHello('Charlie')
-// Hello, Charlie!
+// returns the string "Hello, Charlie!"
 ```
 
 ---
 
-## Notes about functions
+## Important things to understand about functions
 
+- Declare a function using the `function` keyword.
 - Function declarations: a block of code that you define once and then can "invoke," or "call," over and over from other places in your code.
 - _Declaring_ the function and _calling_ the function are two separate steps.
-- Declare a function with the `function` keyword.
+- Functions can optionally return a value back to the caller of the function. To return a value from the function, you need the `return` keyword.
 - The code inside the curly braces is executed when the function is called.
 - To call a function, you need the name of the function and parentheses after it.
-- Can optionally take _arguments_ (aka _parameters_), which are values you give to the function when you call it. When your function needs to receive some outside information to run, you need an argument. Can have multiple arguments. The position of the arguments matters.
-- Functions can optionally return a value back. To return a value from the function, you need the `return` keyword.
+- Can optionally receive _arguments_ (aka _parameters_), which are values you give to the function when you call it. When your function needs to receive some outside information to run, you need an argument. Can have multiple arguments. The order of the arguments matters.
 - `return` also stops the function on that line and exits. Nothing in the body of the function after a `return` will be run.
 
 ---
@@ -574,13 +597,17 @@ function ordinal(num) {
 
 ## Function arguments and variable names
 
-- Function arguments are like variables
-- You can reassign them with new values
-- If you pass variables to a function as arguments, they _do not_ have to have the same name
+- You can think of arguments like input we can give to a function.
+- Not every function needs to accept arguments. Some functions don't need any input to do their job.
+- Function arguments are like variables: they can hold values.
+- They get their values ONLY when you call the function
+- You can call the same function with different values for the arguments, but the function will always refer to them by the same names
+- The names of the arguments only exist inside the function; they are not available outside of the body of the function.
+- If you pass variables to a function as arguments, they _do not_ have to have the same name as the function parameters.
 
 ---
 
-## Using different variable and argument names example
+## Using different variable and parameter names example
 
 ```js
 let ballRadius = 10
@@ -608,7 +635,7 @@ Create a javascript file and link it to an html page (or use one the you created
 
 ## Scope
 
-Variables have a _scope_ -- a defined area of the code where they exist and can be used. If you define a variable outside of any code block (an area surrounded by curly braces), it is available throughout your code. If you define a variable within a code block, it is available in that code block and all code blocks nested under it.
+Variables have a _scope_: a defined area of the code where they exist and can be used. If you define a variable outside of any code block (an area surrounded by curly braces), it is available throughout your code. If you define a variable within a code block, it is available in that code block and all code blocks nested under it.
 
 ---
 
